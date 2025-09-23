@@ -69,13 +69,13 @@ export const NicomacoGame = () => {
             <img 
               src={nicomacoLogo} 
               alt="Nicômaco Logo" 
-              className="w-20 h-20 object-contain"
+              className="w-20 h-20 object-contain drop-shadow-lg"
             />
-            <h1 className="text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h1 className="text-6xl font-bold text-white drop-shadow-lg">
               Nicômaco
             </h1>
           </div>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-white/90 drop-shadow-md font-medium">
             Jogo de gestão sustentável
           </p>
         </div>

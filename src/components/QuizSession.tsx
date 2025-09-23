@@ -19,6 +19,12 @@ export const QuizSession = ({ gameState, updateGameState, onComplete }: QuizSess
   const totalQuestions = questions.length;
   const questionsRemaining = totalQuestions - gameState.currentQuestionIndex;
 
+  // Safety check - if no current question or finished, complete the game
+  if (!currentQuestion || gameState.currentQuestionIndex >= totalQuestions) {
+    onComplete(gameState.score);
+    return null;
+  }
+
   useEffect(() => {
     if (gameState.currentQuestionIndex >= totalQuestions) {
       onComplete(gameState.score);

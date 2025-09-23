@@ -151,15 +151,15 @@ All colors MUST be HSL.
 
   /* Game Cards */
   .game-card {
-    @apply bg-card/80 backdrop-blur-sm border border-border/50;
+    @apply bg-white/90 backdrop-blur-sm border border-border/50;
     @apply shadow-lg hover:shadow-xl transition-all duration-300;
     @apply rounded-xl p-6;
   }
 
   .quiz-card {
-    @apply bg-gradient-to-br from-card to-muted/30;
+    @apply bg-white/95 backdrop-blur-sm;
     @apply border border-border/30 rounded-2xl shadow-lg;
-    @apply backdrop-blur-sm;
+    @apply text-gray-800;
   }
 
   /* Progress animations */

@@ -77,6 +77,31 @@ export const GameResults = ({ score, companyName, onRestart }: GameResultsProps)
             ))}
           </div>
 
+          {/* Performance Summary */}
+          <div className="bg-muted/30 rounded-lg p-4 text-left">
+            <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+              📊 Resumo do Desempenho
+            </h3>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <span className="text-muted-foreground">Pontuação Final:</span>
+                <p className="font-bold text-lg">{score.toLocaleString()}</p>
+              </div>
+              <div>
+                <span className="text-muted-foreground">Nível Alcançado:</span>
+                <p className="font-bold">{performance.level}</p>
+              </div>
+              <div>
+                <span className="text-muted-foreground">Empresa:</span>
+                <p className="font-medium">{companyName}</p>
+              </div>
+              <div>
+                <span className="text-muted-foreground">Classificação:</span>
+                <p className="font-medium">{performance.icon}</p>
+              </div>
+            </div>
+          </div>
+
           {/* Sustainability Tips */}
           <div className="text-left">
             <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
