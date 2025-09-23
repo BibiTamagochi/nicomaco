@@ -48,10 +48,10 @@ export const CompanySelection = ({ onSelectCompany }: CompanySelectionProps) => 
   return (
     <div className="space-y-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold text-foreground mb-4">
+        <h2 className="text-3xl font-bold text-white drop-shadow-lg mb-4">
           Escolha o Tipo da Sua Empresa
         </h2>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-lg text-white/90 drop-shadow-md">
           Selecione o setor empresarial que melhor representa seu negócio
         </p>
       </div>
@@ -86,7 +86,7 @@ export const CompanySelection = ({ onSelectCompany }: CompanySelectionProps) => 
         ))}
       </div>
 
-      <div className="text-center text-sm text-muted-foreground">
+      <div className="text-center text-sm text-white/90">
         <p>🌱 Cada setor possui perguntas específicas sobre sustentabilidade empresarial 🌱</p>
       </div>
     </div>
