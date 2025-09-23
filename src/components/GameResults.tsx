@@ -126,6 +126,14 @@ ${companyName} está comprometida com a sustentabilidade empresarial! 💚`;
         </CardContent>
       </Card>
 
+      {/* Gandhi Quote */}
+      <div className="text-center text-muted-foreground max-w-2xl mx-auto">
+        <blockquote className="text-lg italic border-l-4 border-primary pl-4 py-2 mb-4">
+          "A Terra provê o suficiente para satisfazer as necessidades de todos, mas não a ganância de todos."
+        </blockquote>
+        <cite className="text-sm font-medium">— Mahatma Gandhi</cite>
+      </div>
+
       {/* Footer Message */}
       <div className="text-center text-muted-foreground">
         <p className="text-sm">
