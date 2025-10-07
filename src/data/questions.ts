@@ -34,19 +34,17 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
     },
     {
       id: 'tech-3',
-      question: 'Qual estratégia de desenvolvimento sustentável {company} deve adotar?',
+      question: 'Sua plataforma coleta muitos dados dos usuários para melhorar a experiência. O time de produto quer expandir essa coleta para personalizar anúncios. O jurídico alerta que isso pode causar conflito com novas leis de proteção de dados. Já o time de governança propõe implementar política de consentimento granular (escolha detalhada dos dados que permite a empresa coletar), mesmo que isso reduza a taxa de conversão inicial. O que você decide?',
       options: [
-        'Código otimizado e cloud computing verde',
-        'Servidores próprios sem otimização',
-        'Ignorar eficiência energética',
-        'Usar apenas hardware antigo'
+        'Expandir a coleta de dados para gerar mais receita publicitária',
+        'Criar política de consentimento granular, priorizando transparência',
+        'Manter a coleta atual e esperar a regulamentação apertar para agir'
       ],
-      correctAnswer: 0,
-      explanation: 'Código otimizado reduz uso de recursos e cloud verde usa energia renovável.',
+      correctAnswer: 1,
+      explanation: 'Adotar consentimento granular reduz risco legal, reforça a confiança do usuário e fortalece a imagem ética da empresa, sendo a solução mais alinhada ao ESG na área de tecnologia.',
       wrongExplanations: [
-        'Servidores próprios podem ser menos eficientes',
-        'Eficiência energética é fundamental',
-        'Hardware antigo consome mais energia'
+        'Expandir coleta pode gerar problemas legais e reputacionais com os usuários',
+        'Esperar a lei apertar é reativo e coloca a empresa em risco'
       ]
     }
   ],
