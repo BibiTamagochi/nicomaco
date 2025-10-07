@@ -19,19 +19,17 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
     },
     {
       id: 'tech-2',
-      question: 'Como {company} pode reduzir o desperdício de energia em escritórios?',
+      question: 'Sua startup está crescendo e precisa contratar mais pessoas para o time de desenvolvimento. O RH sugere manter o processo 100% técnico para garantir velocidade. O setor de ESG propõe incluir metas de diversidade no processo seletivo, mesmo que o tempo de contratação aumente. Um investidor alerta que abrir cotas ou metas pode parecer "pouco meritocrático" e gerar conflitos internos. O que você decide?',
       options: [
-        'Deixar todos os equipamentos ligados',
-        'Usar lâmpadas incandescentes',
-        'Implementar automação e LEDs',
-        'Aumentar o ar condicionado'
+        'Manter foco técnico para acelerar contratações.',
+        'Incluir metas de diversidade no processo, mesmo com mais tempo.',
+        'Fazer seleção neutra, mas divulgar que diversidade é um valor da empresa.'
       ],
-      correctAnswer: 2,
-      explanation: 'Automação inteligente e lâmpadas LED reduzem significativamente o consumo de energia.',
+      correctAnswer: 1,
+      explanation: 'Incluir metas promove inovação, justiça social e fortalece a cultura organizacional, mesmo que o processo seja um pouco mais demorado.',
       wrongExplanations: [
-        'Equipamentos ligados desperdiçam energia',
-        'Lâmpadas incandescentes consomem mais energia',
-        'Ar condicionado excessivo aumenta o consumo'
+        'Foco só técnico mantém viés inconsciente e perpetua desigualdades.',
+        'Só divulgar valores sem ação prática gera risco de diversity-washing.'
       ]
     },
     {
