@@ -4,19 +4,17 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
   'startup-tech': [
     {
       id: 'tech-1',
-      question: 'Qual é a melhor prática sustentável que {company} pode implementar em seu data center?',
+      question: 'Sua empresa precisa renovar servidores. A equipe de TI defende migrar para um data center internacional famoso por eficiência energética, mas isso aumentaria a pegada de transporte de dados. Outro grupo sugere contratar uma empresa local, menos eficiente em energia, mas que gera empregos na região. Uma terceira alternativa é migrar parcialmente para nuvem pública, reduzindo hardware próprio, mas aumentando a dependência de gigantes de tecnologia.',
       options: [
-        'Usar apenas servidores de alta potência',
-        'Implementar refrigeração eficiente e energia renovável',
-        'Aumentar o número de servidores',
-        'Usar ar condicionado tradicional'
+        'Contratar o data center internacional mais eficiente, reduzindo emissões diretas.',
+        'Optar pelo data center local, fortalecendo economia regional.',
+        'Adotar nuvem pública em parte dos processos, equilibrando impacto ambiental e social.'
       ],
-      correctAnswer: 1,
-      explanation: 'Data centers sustentáveis usam refrigeração eficiente e energia renovável para reduzir o impacto ambiental.',
+      correctAnswer: 2,
+      explanation: 'A nuvem pública (parcial) reduz necessidade de hardware físico (menos lixo eletrônico, menos gasto energético) e mantém flexibilidade de gestão. É a opção que equilibra inovação, impacto ambiental e efeitos sociais indiretos.',
       wrongExplanations: [
-        'Servidores de alta potência consomem mais energia',
-        'Mais servidores significa maior consumo energético', 
-        'Ar condicionado tradicional é menos eficiente'
+        'O data center internacional reduz emissões, mas aumenta dependência externa e enfraquece impacto social local.',
+        'O data center local fortalece empregos, mas aumenta emissões e reduz eficiência.'
       ]
     },
     {
