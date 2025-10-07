@@ -46,6 +46,21 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
         'Expandir coleta pode gerar problemas legais e reputacionais com os usuários',
         'Esperar a lei apertar é reativo e coloca a empresa em risco'
       ]
+    },
+    {
+      id: 'tech-4',
+      question: 'Após uma rodada de investimento, sua startup planeja trocar todo o parque de computadores e equipamentos. A equipe técnica quer comprar os modelos mais modernos. O financeiro propõe vender os antigos para empresas menores. Já o time de sustentabilidade sugere firmar parceria com cooperativas de reciclagem e doar parte dos equipamentos para escolas públicas. O que fazer?',
+      options: [
+        'Comprar novos e vender os antigos para recuperar parte do investimento',
+        'Doar os equipamentos antigos para escolas e reciclar o que for inviável',
+        'Atualizar só parte dos equipamentos e usar o restante até o fim da vida útil'
+      ],
+      correctAnswer: 1,
+      explanation: 'Doar gera impacto social direto, reduz lixo eletrônico e fortalece a marca da empresa como inovadora e socialmente responsável, além de cumprir com princípios de economia circular.',
+      wrongExplanations: [
+        'Vender recupera parte do valor, mas não garante destino ambientalmente correto dos resíduos',
+        'Adiar troca economiza, mas pode impactar produtividade e inovação'
+      ]
     }
   ],
 
