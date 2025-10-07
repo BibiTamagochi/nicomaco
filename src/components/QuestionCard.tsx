@@ -40,7 +40,7 @@ export const QuestionCard = ({
       {/* Question */}
       <Card className="quiz-card">
         <CardHeader>
-          <CardTitle className="text-2xl leading-relaxed">
+          <CardTitle className="text-xl leading-loose">
             {question.question}
           </CardTitle>
         </CardHeader>
