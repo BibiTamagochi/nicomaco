@@ -4,7 +4,6 @@ import { CompanySelection } from './CompanySelection';
 import { CompanyNaming } from './CompanyNaming';
 import { QuizSession } from './QuizSession';
 import { GameResults } from './GameResults';
-import nicomacoLogo from '../assets/nicomaco-logo.png';
 
 const initialGameState: GameState = {
   phase: 'company-selection',
@@ -65,16 +64,9 @@ export const NicomacoGame = () => {
       <div className="container mx-auto px-4 py-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <img 
-              src={nicomacoLogo} 
-              alt="Nicômaco Logo" 
-              className="w-20 h-20 object-contain drop-shadow-lg"
-            />
-            <h1 className="text-6xl font-bold text-white drop-shadow-lg">
-              Nicômaco
-            </h1>
-          </div>
+          <h1 className="text-6xl font-bold text-white drop-shadow-lg mb-4">
+            Nicômaco
+          </h1>
           <p className="text-xl text-white/90 drop-shadow-md font-medium">
             Jogo de gestão sustentável
           </p>
