@@ -91,19 +91,31 @@ export const QuestionCard = ({
           <CardContent className="space-y-4">
             <div>
               <h4 className="font-semibold text-success mb-2">✅ Resposta Correta:</h4>
-              <p className="text-sm">{question.explanation}</p>
+              <p className="text-sm">
+                <span className="font-semibold">{String.fromCharCode(65 + question.correctAnswer)}) {question.options[question.correctAnswer]}</span>
+                <br />
+                <span className="text-muted-foreground">{question.explanation}</span>
+              </p>
             </div>
             
             {!lastAnswerCorrect && (
               <div>
                 <h4 className="font-semibold text-destructive mb-2">❌ Por que as outras estão erradas:</h4>
-                <ul className="text-sm space-y-1">
-                  {question.wrongExplanations.map((explanation, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-muted-foreground">•</span>
-                      <span>{explanation}</span>
-                    </li>
-                  ))}
+                <ul className="text-sm space-y-2">
+                  {question.options.map((option, index) => {
+                    if (index === question.correctAnswer) return null;
+                    const wrongExplanationIndex = index < question.correctAnswer ? index : index - 1;
+                    return (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-muted-foreground">•</span>
+                        <span>
+                          <span className="font-semibold">{String.fromCharCode(65 + index)}) {option}</span>
+                          <br />
+                          <span className="text-muted-foreground">{question.wrongExplanations[wrongExplanationIndex]}</span>
+                        </span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
