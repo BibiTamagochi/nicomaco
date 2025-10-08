@@ -136,53 +136,77 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
   'school-network': [
     {
       id: 'school-1',
-      question: 'Como {company} pode tornar suas escolas mais sustentáveis?',
+      question: 'Sua rede cresceu e agora há unidades em bairros de renda muito diferente. O conselho sugere padronizar a estrutura de custos para simplificar a gestão. Uma proposta alternativa é criar subsídios cruzados: mensalidades mais altas em áreas ricas para financiar bolsas nas áreas vulneráveis. Já outra parte do time defende buscar patrocínios privados para manter o mesmo preço em todas as unidades. O que você decide?',
       options: [
-        'Usar apenas papel sem reciclagem',
-        'Implementar energia solar e coleta seletiva',
-        'Aumentar o uso de recursos descartáveis',
-        'Ignorar educação ambiental'
+        'Padronizo custos, garantindo previsibilidade e controle financeiro.',
+        'Busco patrocínios externos para manter preços, reduzindo risco de atrito entre famílias.',
+        'Implemento subsídio cruzado entre unidades, criando impacto social direto.'
       ],
-      correctAnswer: 1,
-      explanation: 'Energia solar reduz custos e impacto ambiental, coleta seletiva ensina sustentabilidade.',
+      correctAnswer: 2,
+      explanation: 'Exemplo claro de ESG aplicado ao setor educacional, integrando justiça social à estratégia organizacional ao equilibrar a viabilidade econômica, justiça social e reputação institucional.',
       wrongExplanations: [
-        'Papel sem reciclagem desperdiça recursos naturais',
-        'Descartáveis geram mais lixo',
-        'Educação ambiental é fundamental para formar cidadãos conscientes'
+        'Embora traga eficiência de gestão, desconsidera a realidade socioeconômica local de cada unidade, não sendo sustentável a longo prazo.',
+        'Foca apenas em uma solução instável e dependente de terceiros.'
       ]
     },
     {
       id: 'school-2',
-      question: 'Qual programa educacional sustentável {company} deve implementar?',
+      question: 'Sua rede pretende implantar hortas pedagógicas em todas as unidades. Em bairros mais estruturados, a comunidade se mobilizou rapidamente. Já em regiões vulneráveis, as escolas não têm espaço adequado ou apoio das famílias. O time pedagógico sugere adaptar o projeto para ser 100% virtual nas unidades com restrição. O setor de ESG propõe uma parceria com hortas comunitárias próximas, mesmo com mais esforço logístico. O financeiro propõe suspender o projeto nas unidades com dificuldade. O que você decide?',
       options: [
-        'Ignorar temas ambientais',
-        'Hortas escolares e reciclagem criativa',
-        'Usar apenas livros impressos',
-        'Descartar materiais sempre'
+        'Parceria com hortas comunitárias para garantir equidade na experiência.',
+        'Adoto a versão virtual do projeto nas unidades sem espaço físico.',
+        'Mantenho apenas onde for viável, para reduzir custos e esforços.'
       ],
-      correctAnswer: 1,
-      explanation: 'Hortas ensinam sobre natureza e reciclagem desenvolve criatividade sustentável.',
+      correctAnswer: 0,
+      explanation: 'A parceria garante inclusão, engajamento com o território e impacto ambiental e social real, ainda que com mais esforço. Uma solução que fortalece vínculos com a comunidade local e o propósito educacional.',
       wrongExplanations: [
-        'Temas ambientais são essenciais na educação moderna',
-        'Materiais digitais podem complementar impressos',
-        'Descarte desnecessário ensina maus hábitos'
+        'Virtualizar pode ser interessante, mas reduz o contato com a natureza, objetivo central do projeto.',
+        'Suspender cria desigualdade de acesso a experiências pedagógicas.'
       ]
     },
     {
       id: 'school-3',
-      question: 'Como {company} pode reduzir o consumo de energia nas escolas?',
+      question: 'A rede quer adotar um novo sistema de ensino digital, com plataformas adaptativas e inteligência artificial. Escolas de áreas centrais têm bom acesso à internet e equipamentos. Já as unidades em bairros vulneráveis não têm estrutura suficiente. O time de TI sugere liberar a ferramenta apenas nas unidades mais preparadas. O pedagógico propõe buscar financiamento público para viabilizar a implantação em todas. Já o marketing quer lançar a novidade como diferencial da rede. O que você decide?',
       options: [
-        'Deixar luzes acesas sempre',
-        'Sensores de movimento e iluminação natural',
-        'Usar equipamentos antigos',
-        'Aumentar o ar condicionado'
+        'Implanto apenas onde há estrutura, para começar a colher resultados.',
+        'Busco financiamento para garantir equidade de acesso.',
+        'Lanço o marketing da inovação, mesmo com implantação parcial.'
       ],
       correctAnswer: 1,
-      explanation: 'Sensores economizam energia e iluminação natural reduz custos e melhora bem-estar.',
+      explanation: 'Buscar financiamento, mesmo que leve mais tempo, garante acesso igualitário à inovação, alinhado à missão educacional e à responsabilidade social da rede.',
       wrongExplanations: [
-        'Luzes acesas desnecessariamente desperdiçam energia',
-        'Equipamentos antigos consomem mais energia',
-        'Ar condicionado excessivo aumenta consumo energético'
+        'Implantar apenas onde há estrutura aprofunda desigualdades educacionais.',
+        'Usar o marketing antes da implantação completa pode gerar críticas de greenwashing digital.'
+      ]
+    },
+    {
+      id: 'school-4',
+      question: 'Uma pesquisa revela que alunos de bairros periféricos da rede têm desempenho inferior nas avaliações nacionais. A equipe pedagógica sugere reforço escolar com tutoria presencial. O setor de impacto social propõe formar ex-alunos da própria comunidade para serem tutores, promovendo inclusão e referência positiva. Já o financeiro alerta que essa abordagem pode ser mais cara e difícil de escalar. O que fazer?',
+      options: [
+        'Contrato tutores externos já capacitados para iniciar logo.',
+        'Invisto em plataformas online de reforço com inteligência artificial.',
+        'Formo ex-alunos como tutores, valorizando a comunidade local.'
+      ],
+      correctAnswer: 2,
+      explanation: 'Formar ex-alunos fortalece o pertencimento, cria modelos positivos, gera renda local e reforça o ciclo de impacto social. É mais desafiador, mas muito mais transformador e sustentável.',
+      wrongExplanations: [
+        'Tutores externos resolvem rápido, mas não criam vínculo com a comunidade, e aumentam a rotatividade.',
+        'Plataformas digitais podem apoiar, mas não substituem o acompanhamento humano necessário em contextos mais vulneráveis.'
+      ]
+    },
+    {
+      id: 'school-5',
+      question: 'Uma das escolas da rede, em área periférica, foi alvo de críticas por falta de acessibilidade e inclusão de alunos com deficiência. A diretoria local pede mais tempo para adaptação. O setor jurídico alerta para risco de penalização. A equipe de inclusão propõe investir já em formação de educadores, contratação de mediadores e revisão da estrutura. O financeiro sugere priorizar essa escola apenas no próximo ciclo orçamentário. O que você decide?',
+      options: [
+        'Investir imediatamente em acessibilidade e inclusão.',
+        'Priorizar no próximo ciclo, ajustando conforme o orçamento.',
+        'Divulgar um plano de médio prazo e treinar os educadores apenas por enquanto.'
+      ],
+      correctAnswer: 0,
+      explanation: 'Investir de forma imediata mostra compromisso ético, legal e institucional com a equidade. Mesmo com impacto financeiro, é uma decisão que reforça a missão da rede e evita consequências maiores no futuro.',
+      wrongExplanations: [
+        'Adiar compromete direitos fundamentais dos alunos e põe a rede em risco legal e reputacional.',
+        'Fazer só um plano sem ação concreta pode parecer insensível ou reativo diante da denúncia.'
       ]
     }
   ],
