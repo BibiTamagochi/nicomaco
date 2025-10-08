@@ -61,6 +61,21 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
         'Vender recupera parte do valor, mas não garante destino ambientalmente correto dos resíduos',
         'Adiar troca economiza, mas pode impactar produtividade e inovação'
       ]
+    },
+    {
+      id: 'tech-5',
+      question: 'Sua startup de mobilidade urbana cresceu com um modelo baseado em entregadores autônomos, mas começa a receber críticas por precarização do trabalho. O time jurídico diz que o modelo é legal. O RH propõe criar um fundo interno de apoio para entregadores com acidentes e emergências. Já o time de ESG defende reformular o modelo, oferecendo vínculos opcionais e programas de capacitação. O que você decide?',
+      options: [
+        'Manter o modelo atual, já que é legal e competitivo',
+        'Criar fundo emergencial de apoio aos entregadores',
+        'Reformular o modelo e oferecer vínculo opcional com capacitação'
+      ],
+      correctAnswer: 2,
+      explanation: 'Reformular alinha propósito, reduz riscos reputacionais e legais, melhora retenção dos entregadores e reforça compromisso com trabalho digno, sendo uma resposta madura e sustentável a um problema estrutural.',
+      wrongExplanations: [
+        'Manter o modelo evita custos, mas ignora o impacto social negativo e compromete a reputação',
+        'Criar fundo é um paliativo, ajuda pontualmente, mas não resolve a estrutura precária'
+      ]
     }
   ],
 
