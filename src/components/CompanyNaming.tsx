@@ -45,21 +45,10 @@ export const CompanyNaming = ({ companyType, onSubmitName }: CompanyNamingProps)
         <h2 className="text-3xl font-bold text-foreground mb-4">
           Nomeie Sua {companyTypeNames[companyType]}
         </h2>
-        <p className="text-lg text-muted-foreground">
-          Dê um nome criativo para sua empresa sustentável
-        </p>
       </div>
 
-      <Card className="quiz-card">
-        <CardHeader>
-          <CardTitle className="text-center text-xl">
-            Nome da Empresa
-          </CardTitle>
-          <CardDescription className="text-center">
-            Este nome aparecerá em todas as perguntas do quiz
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
+      <Card className="quiz-card max-w-xl mx-auto">
+        <CardContent className="pt-6">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <Label htmlFor="company-name" className="text-base font-medium">
