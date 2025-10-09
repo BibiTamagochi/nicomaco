@@ -28,7 +28,7 @@ const companyOptions: CompanyOption[] = [
     type: 'delivery',
     name: 'Empresa de Delivery',
     description: 'Logística verde e eficiente',
-    icon: '🚚',
+    icon: '🏍️',
     color: 'from-yellow-500 to-orange-600'
   },
   {
@@ -70,9 +70,6 @@ export const CompanySelection = ({ onSelectCompany }: CompanySelectionProps) => 
               <CardTitle className="text-xl font-bold">
                 {option.name}
               </CardTitle>
-              <CardDescription className="text-muted-foreground">
-                {option.description}
-              </CardDescription>
             </CardHeader>
             <CardContent>
               <Button 

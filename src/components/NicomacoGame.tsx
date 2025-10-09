@@ -107,6 +107,7 @@ export const NicomacoGame = () => {
               gameState={gameState}
               updateGameState={updateGameState}
               onComplete={handleQuizComplete}
+              onRestart={handleRestart}
             />
           )}
           

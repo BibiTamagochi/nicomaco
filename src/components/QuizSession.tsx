@@ -6,14 +6,17 @@ import { GameTimer } from './GameTimer';
 import { ScoreDisplay } from './ScoreDisplay';
 import { Progress } from './ui/progress';
 import { Card, CardContent } from './ui/card';
+import { Button } from './ui/button';
+import { Home } from 'lucide-react';
 
 interface QuizSessionProps {
   gameState: GameState;
   updateGameState: (updates: Partial<GameState>) => void;
   onComplete: (finalScore: number) => void;
+  onRestart: () => void;
 }
 
-export const QuizSession = ({ gameState, updateGameState, onComplete }: QuizSessionProps) => {
+export const QuizSession = ({ gameState, updateGameState, onComplete, onRestart }: QuizSessionProps) => {
   const questions = questionsByCompany[gameState.companyType!];
   const currentQuestion = questions[gameState.currentQuestionIndex];
   const totalQuestions = questions.length;
@@ -128,9 +131,17 @@ export const QuizSession = ({ gameState, updateGameState, onComplete }: QuizSess
         companyName={gameState.companyName}
       />
 
-      {/* Company info */}
-      <div className="text-center text-sm text-muted-foreground">
-        <p>🏢 Empresa: <span className="font-medium text-foreground">{gameState.companyName}</span></p>
+      {/* Return to Menu Button */}
+      <div className="text-center">
+        <Button
+          onClick={onRestart}
+          variant="outline"
+          size="default"
+          className="bg-white/90 hover:bg-white shadow-lg backdrop-blur-sm"
+        >
+          <Home className="mr-2 h-4 w-4" />
+          Retornar ao Menu
+        </Button>
       </div>
     </div>
   );
