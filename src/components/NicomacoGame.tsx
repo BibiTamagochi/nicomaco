@@ -63,20 +63,6 @@ export const NicomacoGame = () => {
         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-primary/10 rounded-full blur-lg animate-pulse delay-500"></div>
       </div>
 
-      {/* Reset Button - Fixed at bottom */}
-      {gameState.phase !== 'company-selection' && (
-        <div className="fixed bottom-8 right-8 z-50">
-          <Button
-            onClick={handleRestart}
-            variant="outline"
-            size="lg"
-            className="bg-white/90 hover:bg-white shadow-lg backdrop-blur-sm"
-          >
-            <Home className="mr-2 h-5 w-5" />
-            Retornar ao menu inicial
-          </Button>
-        </div>
-      )}
       
       <div className="container mx-auto px-4 py-8 relative z-10">
         {/* Header */}
