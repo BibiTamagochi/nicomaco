@@ -40,7 +40,17 @@ export const QuizSession = ({ gameState, updateGameState, onComplete }: QuizSess
   const handleAnswer = (selectedAnswer: number) => {
     if (gameState.answered) return;
 
+    console.log('=== DEBUG ANSWER ===');
+    console.log('Selected Answer Index:', selectedAnswer);
+    console.log('Correct Answer Index:', currentQuestion.correctAnswer);
+    console.log('Question:', currentQuestion.question);
+    console.log('Selected Option:', currentQuestion.options[selectedAnswer]);
+    console.log('Correct Option:', currentQuestion.options[currentQuestion.correctAnswer]);
+    
     const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+    console.log('Is Correct:', isCorrect);
+    console.log('==================');
+    
     const points = isCorrect ? 100 + gameState.timeLeft * 5 : 0; // Bonus for quick answers
 
     updateGameState({
