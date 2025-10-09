@@ -268,53 +268,77 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
   'clothing-industry': [
     {
       id: 'clothing-1',
-      question: 'Como {company} pode produzir roupas de forma mais sustentável?',
+      question: 'Você descobre que sua linha de jeans está consumindo um enorme volume de água na produção. Uma consultoria sugere tecnologia de lavagem a seco que corta 60% do gasto, mas exige máquinas caras importadas. O time financeiro alerta que o investimento pode atrasar a expansão da marca. Já o marketing vê oportunidade de usar tecidos sintéticos reciclados, mais baratos, mas com risco de crítica por microplásticos. O que você decide?',
       options: [
-        'Usar apenas tecidos sintéticos',
-        'Fibras orgânicas e recicladas',
-        'Aumentar uso de produtos químicos',
-        'Descartar tecidos sobrantes'
+        'Invisto na tecnologia de lavagem a seco, mesmo com impacto financeiro imediato.',
+        'Troco parte da coleção para tecidos reciclados, apostando em narrativa de circularidade.',
+        'Lanço uma campanha de compensação hídrica, financiando projetos ambientais externos.'
       ],
-      correctAnswer: 1,
-      explanation: 'Fibras orgânicas são cultivadas sem pesticidas e recicladas aproveitam materiais existentes.',
+      correctAnswer: 2,
+      explanation: 'A compensação hídrica não resolve 100% o problema, mas garante ação imediata, mensurável e comunicável, enquanto a empresa se prepara para tecnologias de longo prazo. É o caminho mais equilibrado entre viabilidade, reputação e impacto real.',
       wrongExplanations: [
-        'Tecidos sintéticos derivam de petróleo e poluem',
-        'Produtos químicos contaminam água e solo',
-        'Descartar tecidos desperdiça recursos'
+        'A tecnologia de lavagem a seco é ótima, mas inviável no curto prazo para a empresa (financeiro trava).',
+        'O tecido reciclado pode parecer sustentável, mas tem riscos de impacto ambiental (microplásticos) e pode gerar críticas de greenwashing.'
       ]
     },
     {
       id: 'clothing-2',
-      question: 'Qual prática de produção sustentável {company} deve implementar?',
+      question: 'A empresa descobre que os resíduos têxteis da produção são altos. O RH sugere criar oficinas locais de upcycling (processo de reaproveitar materiais descartados para criar algo novo de maior valor ou qualidade, sem passar pelo processo industrial de reciclagem tradicional). O financeiro sugere vender os resíduos como matéria-prima para terceiros. O marketing propõe lançar uma campanha mostrando que parte dos resíduos será incinerada para gerar energia. Qual decisão tomar?',
       options: [
-        'Produção em massa sem controle',
-        'Produção sob demanda e tingimento eco-friendly',
-        'Usar muita água sem tratamento',
-        'Ignorar condições de trabalho'
+        'Criar oficinas de upcycling com comunidades locais.',
+        'Vender os resíduos como matéria-prima para terceiros.',
+        'Campanha de incineração energética dos resíduos.'
       ],
-      correctAnswer: 1,
-      explanation: 'Produção sob demanda evita desperdício e tingimento eco-friendly reduz poluição da água.',
+      correctAnswer: 0,
+      explanation: 'As oficinas de upcycling conectam sustentabilidade e impacto social, fortalecendo a reputação e criando valor a longo prazo, mesmo que mais trabalhoso na gestão.',
       wrongExplanations: [
-        'Produção em massa gera excesso e desperdício',
-        'Água sem tratamento polui rios e oceanos',
-        'Condições de trabalho fazem parte da sustentabilidade social'
+        'A venda dos resíduos resolve rápido, mas não gera diferencial competitivo.',
+        'A incineração pode ser vista como poluente e arranhar a imagem da marca.'
       ]
     },
     {
       id: 'clothing-3',
-      question: 'Como {company} pode reduzir o impacto do transporte?',
+      question: 'Sua marca está crescendo e você considera expandir a produção para um país com legislação ambiental mais flexível e mão de obra mais barata. O time de operações vê nisso uma chance de aumentar a margem de lucro. O jurídico alerta para o risco de reputação e possíveis pressões futuras de ONGs. Já o setor de inovação sugere abrir um polo fabril menor em uma região brasileira com incentivos fiscais e mão de obra local qualificada, porém com custo inicial maior. O que fazer?',
       options: [
-        'Usar apenas transporte aéreo',
-        'Produção local e logística eficiente',
-        'Ignorar distâncias de entrega',
-        'Usar muitas embalagens'
+        'Expandir para o país com legislação mais flexível e reduzir custos.',
+        'Abrir o polo no Brasil com foco em inovação e responsabilidade social.',
+        'Manter a produção atual e terceirizar parte da demanda em fornecedores estrangeiros.'
       ],
       correctAnswer: 1,
-      explanation: 'Produção local reduz distâncias e logística eficiente otimiza rotas e cargas.',
+      explanation: 'Representa um investimento mais alto no curto prazo, mas fortalece a marca como comprometida com o desenvolvimento local e boas práticas ESG, além de estar alinhada com políticas públicas e incentivos.',
       wrongExplanations: [
-        'Transporte aéreo tem maior pegada de carbono',
-        'Distâncias maiores aumentam emissões',
-        'Embalagens excessivas geram mais lixo'
+        'Pode trazer ganhos financeiros imediatos, mas expõe a empresa a riscos reputacionais sérios, principalmente em um setor historicamente cobrado por práticas trabalhistas e ambientais.',
+        'Pode parecer um meio-termo, mas dilui o controle sobre a cadeia produtiva e aumenta o risco de más práticas.'
+      ]
+    },
+    {
+      id: 'clothing-4',
+      question: 'Uma auditoria externa aponta que parte dos fornecedores de algodão da sua cadeia produtiva utiliza práticas que contribuem para o desmatamento e uso excessivo de pesticidas. O setor de compras alerta que mudar de fornecedor elevará os custos em 20%. Já a equipe de sustentabilidade sugere adotar certificações como o algodão orgânico ou regenerativo, mesmo que isso exija ajuste de preços no produto final. O marketing teme queda nas vendas por aumento de preço. O que fazer?',
+      options: [
+        'Negociar com os fornecedores atuais para reduzir impactos, sem trocar de fonte.',
+        'Implementar um plano de transição para fornecedores certificados e comunicar ao consumidor.',
+        'Ignorar o alerta da auditoria, mantendo o custo baixo e o preço competitivo.'
+      ],
+      correctAnswer: 1,
+      explanation: 'Exige ajustes de preço, mas agrega valor à marca e atrai um público cada vez mais consciente, além de alinhar a cadeia produtiva com metas de sustentabilidade rastreáveis.',
+      wrongExplanations: [
+        'Apenas negociar sem mudança real pode gerar escândalos futuros e minar a confiança do consumidor.',
+        'Assim como apenas negociar, ignorar o alerta sem mudança real também pode gerar escândalos futuros e minar a confiança do consumidor.'
+      ]
+    },
+    {
+      id: 'clothing-5',
+      question: 'Seu e-commerce cresceu muito, mas o aumento das devoluções (logística reversa) elevou a emissão de carbono no transporte. O setor de TI propõe usar inteligência artificial para sugerir tamanhos com mais precisão, reduzindo devoluções. O financeiro sugere cobrar frete de devolução, para desestimular trocas. Já o marketing quer manter frete grátis e criar um selo de "frete neutro" com compensação de carbono. Qual caminho seguir?',
+      options: [
+        'Cobrar pelo frete de devolução para reduzir volume de trocas.',
+        'Manter frete grátis e compensar carbono via selo "frete neutro".',
+        'Investir em tecnologia de IA para reduzir erros de compra.'
+      ],
+      correctAnswer: 2,
+      explanation: 'Atua na raiz do problema, reduzindo desperdício, custos logísticos e impacto ambiental, além de melhorar a experiência do consumidor de forma inteligente e sustentável.',
+      wrongExplanations: [
+        'Cobrar a devolução pode gerar insatisfação e queda na conversão de vendas.',
+        'A compensação de carbono é válida, mas trata apenas o sintoma, não a causa.'
       ]
     }
   ]
