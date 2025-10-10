@@ -42,7 +42,7 @@ export const CompanyNaming = ({ companyType, onSubmitName }: CompanyNamingProps)
         <div className="text-6xl mb-4">
           {companyTypeIcons[companyType]}
         </div>
-        <h2 className="text-3xl font-bold text-foreground mb-4">
+        <h2 className="text-3xl font-bold text-white mb-4">
           Nomeie Sua {companyTypeNames[companyType]}
         </h2>
       </div>
@@ -82,7 +82,7 @@ export const CompanyNaming = ({ companyType, onSubmitName }: CompanyNamingProps)
       </Card>
 
       <div className="text-center">
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm text-white">
           🌿 Prepare-se para desafios sobre sustentabilidade empresarial! 🌿
         </p>
       </div>
