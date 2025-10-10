@@ -49,10 +49,10 @@ export const CompanySelection = ({ onSelectCompany }: CompanySelectionProps) => 
     <div className="space-y-8">
       <div className="text-center">
         <h2 className="text-3xl font-bold text-white drop-shadow-lg mb-4">
-          Escolha o Tipo da Sua Empresa
+          Teste seu modo de tomar decisões
         </h2>
         <p className="text-lg text-white/90 drop-shadow-md">
-          Selecione o setor empresarial que melhor representa seu negócio
+          Escolha um tipo de negócio para jogar
         </p>
       </div>
 
