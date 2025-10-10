@@ -214,53 +214,77 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
   'delivery': [
     {
       id: 'delivery-1',
-      question: 'Como {company} pode tornar suas entregas mais sustentáveis?',
+      question: 'O sindicato dos entregadores pressiona por aumento da taxa mínima. Se você atender, os preços sobem e parte dos clientes pode migrar para concorrentes. Um investidor sugere automatizar parte das entregas com drones, mas a regulação ainda é incerta e cara. O departamento de sustentabilidade propõe criar rotas otimizadas para reduzir combustível e aumentar ganho líquido por corrida. O que você faz?',
       options: [
-        'Usar apenas veículos a combustão',
-        'Bicicletas elétricas e otimização de rotas',
-        'Fazer entregas individuais sempre',
-        'Ignorar emissões de carbono'
+        'Aceito a pressão dos entregadores, aumentando taxas e negociando comunicação com clientes.',
+        'Invisto em drones em pequena escala para testar a diferenciação de mercado.',
+        'Implemento otimização de rotas para reduzir custos e liberar margem para repassar aos entregadores.'
       ],
-      correctAnswer: 1,
-      explanation: 'Bicicletas elétricas não poluem e rotas otimizadas reduzem distâncias e emissões.',
+      correctAnswer: 2,
+      explanation: 'A otimização de rotas reduz consumo de combustível (impacto ambiental), melhora ganhos por corrida (impacto social) e mantém preços competitivos. É a alternativa que gera sustentabilidade tripla: econômica, social e ambiental.',
       wrongExplanations: [
-        'Veículos a combustão poluem o ar',
-        'Entregas individuais aumentam emissões',
-        'Emissões de carbono contribuem para mudanças climáticas'
+        'Atender a pressão dos entregadores é justo socialmente, mas sem resolver a base do problema: os custos estruturais.',
+        'Investir em drones é inovador, mas ainda inviável e de alto risco regulatório.'
       ]
     },
     {
       id: 'delivery-2',
-      question: 'Qual estratégia de embalagem {company} deve adotar?',
+      question: 'Seus dados mostram que embalagens geram grande volume de lixo nos centros urbanos. O marketing sugere trocar por embalagens biodegradáveis, mesmo que com custo 15% maior. O financeiro propõe um sistema de "embalagem retornável" via parceiros locais, mas alerta para risco logístico. A equipe de ESG propõe lançar um programa educativo com os restaurantes, estimulando embalagens próprias e recompensas para consumidores conscientes. O que fazer?',
       options: [
-        'Usar muitas embalagens plásticas',
-        'Embalagens mínimas e eco-friendly',
-        'Ignorar proteção dos produtos',
-        'Usar apenas isopor'
+        'Adotar embalagens biodegradáveis, mesmo com custo mais alto.',
+        'Criar o sistema de embalagem retornável em parceria com estabelecimentos.',
+        'Iniciar programa de educação com restaurantes e consumidores, promovendo mudança de comportamento.'
       ],
-      correctAnswer: 1,
-      explanation: 'Embalagens mínimas reduzem lixo e materiais eco-friendly se decompõem naturalmente.',
+      correctAnswer: 2,
+      explanation: 'Promove transformação cultural, engajamento e posiciona a empresa como agente de mudança, com menor risco inicial e potencial de impacto sistêmico.',
       wrongExplanations: [
-        'Excesso de plástico polui o ambiente',
-        'Produtos precisam de proteção adequada',
-        'Isopor é altamente poluente'
+        'A troca direta por embalagens biodegradáveis é positiva, mas não resolve o hábito de descarte nem engaja os atores.',
+        'A logística reversa é complexa, cara e exige maturidade operacional.'
       ]
     },
     {
       id: 'delivery-3',
-      question: 'Como {company} pode compensar sua pegada de carbono?',
+      question: 'Em auditoria interna, você descobre que 30% dos entregadores estão trabalhando mais de 12 horas por dia para bater metas. O jurídico alerta que isso pode gerar passivos trabalhistas. O RH propõe limitar metas diárias e criar um fundo de saúde ocupacional, mas o financeiro prevê queda de produtividade. O marketing sugere incluir um "selo de respeito ao trabalhador" nas comunicações da empresa. O que fazer?',
       options: [
-        'Ignorar impacto ambiental',
-        'Plantio de árvores e energia renovável',
-        'Aumentar uso de combustível',
-        'Usar apenas veículos grandes'
+        'Reduzir metas e criar fundo de saúde, mesmo com menor produtividade inicial.',
+        'Adotar o selo de respeito ao trabalhador como forma de valorizar a imagem.',
+        'Criar um modelo flexível de metas que se ajuste por região e perfil dos entregadores.'
+      ],
+      correctAnswer: 0,
+      explanation: 'Ataca o problema diretamente, melhora o bem-estar dos entregadores e reduz risco jurídico, além de fortalecer a reputação a longo prazo.',
+      wrongExplanations: [
+        'O selo sem mudança real pode ser percebido como green/social washing.',
+        'O modelo flexível é interessante, mas difícil de padronizar e monitorar.'
+      ]
+    },
+    {
+      id: 'delivery-4',
+      question: 'A matriz da empresa cobra redução de emissões de carbono. O setor de operações sugere frota elétrica para entregas urbanas, mas os custos e a infraestrutura ainda são limitados. O time de TI propõe usar análise de dados para prever picos de demanda e reduzir entregas ociosas. O marketing quer criar um plano de assinatura "entrega verde", com taxa extra para entregas feitas de bicicleta ou por veículos elétricos. Qual caminho você escolhe?',
+      options: [
+        'Investir em frota elétrica de forma gradual, começando por grandes centros.',
+        'Implementar análise preditiva (inteligência de dados) para reduzir entregas desnecessárias.',
+        'Lançar plano de entrega verde com adesão voluntária dos clientes.'
       ],
       correctAnswer: 1,
-      explanation: 'Árvores absorvem CO2 e energia renovável reduz emissões na operação.',
+      explanation: 'Reduz ociosidade, otimiza rotas, diminui emissões e custos — resultado concreto no curto prazo, com ganho ambiental e econômico.',
       wrongExplanations: [
-        'Impacto ambiental deve ser considerado',
-        'Combustível aumenta emissões',
-        'Veículos grandes consomem mais combustível'
+        'A frota elétrica é o ideal de longo prazo, mas exige alto investimento e depende de infraestrutura.',
+        'O plano verde depende do engajamento do cliente, e tem impacto limitado.'
+      ]
+    },
+    {
+      id: 'delivery-5',
+      question: 'Uma crise de imagem ocorre após denúncia de entregadores adoecendo por exposição ao calor extremo. A opinião pública pressiona. O jurídico alerta para risco de ação coletiva. O RH propõe criar pontos de apoio com água, sombra e descanso. O financeiro alerta para custos altos e impacto em prazo de entregas. Já o setor de inovação sugere desenvolver mochilas térmicas inteligentes com sensores de temperatura para alertar sobre risco à saúde. Qual medida adotar?',
+      options: [
+        'Criar pontos de apoio com infraestrutura básica nas principais rotas.',
+        'Investir em mochilas inteligentes com sensores de temperatura.',
+        'Ampliar o seguro saúde e emitir nota pública de compromisso com segurança climática.'
+      ],
+      correctAnswer: 0,
+      explanation: 'Prática, visível e atende diretamente à saúde dos entregadores. Gera impacto social claro e melhora a reputação da empresa junto à opinião pública e aos próprios entregadores.',
+      wrongExplanations: [
+        'As mochilas são inovadoras, mas caras e não resolvem o desconforto imediato.',
+        'O seguro saúde é reativo e pode parecer insuficiente frente ao problema climático.'
       ]
     }
   ],
