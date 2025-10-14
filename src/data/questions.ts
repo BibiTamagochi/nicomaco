@@ -82,53 +82,77 @@ export const questionsByCompany: Record<CompanyType, Question[]> = {
   'restaurant': [
     {
       id: 'rest-1',
-      question: 'Como {company} pode reduzir o desperdício de alimentos?',
+      question: 'Seu restaurante começa a enfrentar críticas por desperdício excessivo, especialmente de alimentos que sobram no fim do dia. O chef propõe usar essas sobras para criar um "prato do dia sustentável", com comunicação sobre reaproveitamento. O setor de qualidade alerta para riscos sanitários e defende um cardápio fixo mais enxuto, com controle de porções. Já o financeiro sugere firmar parcerias com ONGs para doação do excedente. Qual caminho você escolhe?',
       options: [
-        'Preparar grandes quantidades sempre',
-        'Implementar controle de porções e doações',
-        'Jogar sobras no lixo comum',
-        'Ignorar a validade dos produtos'
+        'Apoiar a criação de um "prato sustentável" com sobras, comunicando a ação aos clientes.',
+        'Reduzir o cardápio e controlar melhor a produção para minimizar sobras.',
+        'Estabelecer parcerias com ONGs e doar alimentos excedentes regularmente.'
       ],
       correctAnswer: 1,
-      explanation: 'Controle de porções evita desperdício e doações ajudam comunidades necessitadas.',
+      explanation: 'Essa medida atua na causa do problema, reduzindo desperdício desde a origem. É uma ação preventiva, que melhora a eficiência operacional e reduz custos.',
       wrongExplanations: [
-        'Grandes quantidades levam ao desperdício',
-        'Lixo comum polui o meio ambiente',
-        'Produtos vencidos são desperdício e risco à saúde'
+        'Já reutilizar sobras em pratos pode comprometer a segurança alimentar e a imagem do restaurante, mesmo com boa comunicação.',
+        'A doação (ONGs) é importante, mas lida com o sintoma, não com a causa, e exige cuidados legais e logísticos.'
       ]
     },
     {
       id: 'rest-2',
-      question: 'Qual a melhor prática sustentável para embalagens do {company}?',
+      question: 'A conta de energia elétrica do restaurante subiu 25% nos últimos seis meses. O setor de operações sugere trocar todo o sistema de iluminação e climatização por modelos de alta eficiência. O financeiro recomenda adotar um sistema inteligente de monitoramento do consumo, para entender onde estão os maiores desperdícios. Já o RH propõe campanhas internas para conscientizar a equipe sobre o uso responsável da energia. Qual estratégia adotar?',
       options: [
-        'Usar apenas plástico descartável',
-        'Embalagens biodegradáveis e reutilizáveis',
-        'Aumentar o uso de isopor',
-        'Ignorar o tipo de embalagem'
+        'Iniciar campanhas internas para engajar a equipe e mudar comportamentos.',
+        'Trocar equipamentos por modelos mais eficientes, começando pelos maiores consumidores.',
+        'Implantar sistema de monitoramento inteligente para mapear os principais pontos de consumo.'
       ],
-      correctAnswer: 1,
-      explanation: 'Embalagens biodegradáveis se decompõem naturalmente e reutilizáveis reduzem lixo.',
+      correctAnswer: 2,
+      explanation: 'Sem entender onde está o maior consumo, qualquer mudança corre o risco de ser mal direcionada. Por isso, o monitoramento gera dados concretos para decisões mais eficazes.',
       wrongExplanations: [
-        'Plástico descartável polui o ambiente',
-        'Isopor demora centenas de anos para se decompor',
-        'Embalagens inadequadas prejudicam o meio ambiente'
+        'Campanhas de conscientização têm impacto limitado sem mudanças estruturais ou dados que mostrem onde agir.',
+        'Trocar equipamentos pode ser bom, mas sem diagnóstico pode gerar investimentos mal planejados.'
       ]
     },
     {
       id: 'rest-3',
-      question: 'Como {company} pode ser mais eficiente no uso da água?',
+      question: 'O delivery do restaurante disparou, mas o uso de embalagens plásticas gerou críticas de clientes nas redes. O marketing quer substituir por embalagens biodegradáveis personalizadas com a marca. O financeiro alerta que isso aumentaria os custos em 20%. O gerente de operações propõe oferecer a opção de embalagem ecológica com uma taxa extra para o cliente. Qual abordagem é mais sustentável e viável?',
       options: [
-        'Deixar torneiras abertas',
-        'Sistemas de reuso e torneiras automáticas',
-        'Usar mangueiras sempre',
-        'Ignorar vazamentos'
+        'Mudar totalmente para embalagens sustentáveis, reforçando o valor da marca.',
+        'Oferecer a opção de embalagem ecológica por um valor adicional.',
+        'Manter as embalagens atuais e compensar com outras ações de sustentabilidade.'
       ],
       correctAnswer: 1,
-      explanation: 'Sistemas de reuso aproveitam água e torneiras automáticas evitam desperdício.',
+      explanation: 'Essa alternativa equilibra sustentabilidade com viabilidade financeira, permitindo que clientes mais conscientes escolham pagar pela embalagem verde. A opção certa permite testar a aceitação do cliente antes de uma transição completa.',
       wrongExplanations: [
-        'Torneiras abertas desperdiçam água',
-        'Mangueiras gastam muita água',
-        'Vazamentos causam desperdício contínuo'
+        'Mudar 100% ignora o impacto financeiro, porque não leva em conta o aumento de custos em 20%, e a viabilidade prática da decisão ao comprometer a rentabilidade do restaurante.',
+        'Ignora a causa direta das reclamações (as embalagens plásticas), além de compensar com outras ações pode parecer greenwashing, já que a principal fonte de impacto ambiental continuaria existindo.'
+      ]
+    },
+    {
+      id: 'rest-4',
+      question: 'A matriz da empresa cobra redução de emissões de carbono. O setor de operações sugere frota elétrica para entregas urbanas, mas os custos e a infraestrutura ainda são limitados. O time de TI propõe usar análise de dados para prever picos de demanda e reduzir entregas ociosas. O marketing quer criar um plano de assinatura "entrega verde", com taxa extra para entregas feitas de bicicleta ou por veículos elétricos.Qual caminho você escolhe?',
+      options: [
+        'Implementar análise preditiva (inteligência de dados) para reduzir entregas desnecessárias.',
+        'Investir em frota elétrica de forma gradual, começando por grandes centros.',
+        'Lançar plano de entrega verde com adesão voluntária dos clientes.'
+      ],
+      correctAnswer: 0,
+      explanation: 'Essa ação gera resultado imediato, com redução real de emissões e custos logísticos, sem depender de grandes investimentos ou infraestrutura.',
+      wrongExplanations: [
+        'A frota elétrica é desejável no longo prazo, mas é cara e exige estrutura externa (postos de recarga, manutenção especializada).',
+        'O plano de entrega verde depende do engajamento dos clientes, o que pode gerar baixo impacto inicial.'
+      ]
+    },
+    {
+      id: 'rest-5',
+      question: 'Seu restaurante pretende adotar práticas mais sustentáveis na gestão de resíduos. O setor de compras sugere substituir todo o material descartável por opções compostáveis, com um custo 15% maior. A equipe operacional teme aumento no tempo de separação de resíduos. Já o setor de qualidade propõe iniciar com coleta seletiva apenas em áreas de menor movimento, para testar a adaptação da equipe. Qual decisão é mais estratégica?',
+      options: [
+        'Substituir todos os descartáveis por compostáveis, mesmo com aumento de custo.',
+        'Manter os atuais descartáveis, e investir em treinamento da equipe para separar resíduos corretamente.',
+        'Iniciar com coleta seletiva parcial, testando em setores de menor impacto.'
+      ],
+      correctAnswer: 2,
+      explanation: 'Essa abordagem permite adaptar a operação gradualmente, identificando obstáculos antes de escalar a prática. É uma forma de gerar aprendizado interno e engajamento, com menores riscos.',
+      wrongExplanations: [
+        'Trocar todos os descartáveis gera impacto ambiental positivo, mas pode ser financeiramente insustentável.',
+        'Apenas treinar a equipe é importante, mas sem mudança estrutural nos resíduos gerados, tem efeito limitado.'
       ]
     }
   ],
