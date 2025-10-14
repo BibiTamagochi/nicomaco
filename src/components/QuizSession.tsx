@@ -36,7 +36,7 @@ export const QuizSession = ({ gameState, updateGameState, onComplete, onRestart 
 
     // Reset timer when moving to next question
     if (!gameState.answered && !gameState.showExplanation) {
-      updateGameState({ timeLeft: 30 });
+      updateGameState({ timeLeft: 60 });
     }
   }, [gameState.currentQuestionIndex, gameState.answered, gameState.showExplanation]);
 
@@ -70,7 +70,7 @@ export const QuizSession = ({ gameState, updateGameState, onComplete, onRestart 
       answered: false,
       showExplanation: false,
       lastAnswerCorrect: null,
-      timeLeft: 30,
+      timeLeft: 60,
     });
   };
 

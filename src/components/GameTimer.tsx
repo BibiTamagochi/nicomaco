@@ -25,7 +25,7 @@ export const GameTimer = ({ timeLeft, onTimeUp, isActive, updateTimeLeft }: Game
     return () => clearInterval(timer);
   }, [timeLeft, isActive, onTimeUp, updateTimeLeft]);
 
-  const progressValue = (timeLeft / 30) * 100;
+  const progressValue = (timeLeft / 60) * 100;
   const isUrgent = timeLeft <= 10;
 
   return (

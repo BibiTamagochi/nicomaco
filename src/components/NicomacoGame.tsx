@@ -13,7 +13,7 @@ const initialGameState: GameState = {
   companyName: '',
   currentQuestionIndex: 0,
   score: 0,
-  timeLeft: 30,
+  timeLeft: 60,
   answered: false,
   showExplanation: false,
   lastAnswerCorrect: null,
