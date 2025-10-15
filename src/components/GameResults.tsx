@@ -10,14 +10,16 @@ interface GameResultsProps {
 
 export const GameResults = ({ score, companyName, onRestart }: GameResultsProps) => {
   const getPerformanceLevel = (score: number) => {
-    if (score >= 2000) return { level: 'Expert Sustentável', icon: '🏆', color: 'text-yellow-500' };
-    if (score >= 1500) return { level: 'Empresário Verde', icon: '🥇', color: 'text-green-500' };
-    if (score >= 1000) return { level: 'Consciente Ambiental', icon: '🥈', color: 'text-blue-500' };
-    if (score >= 500) return { level: 'Iniciante Sustentável', icon: '🥉', color: 'text-orange-500' };
-    return { level: 'Aprendiz Verde', icon: '🌱', color: 'text-green-400' };
+    if (score === 5) return { level: 'Expert Sustentável', icon: '🏆', color: 'text-yellow-500', stars: 5 };
+    if (score === 4) return { level: 'Empresário Verde', icon: '🥇', color: 'text-green-500', stars: 4 };
+    if (score === 3) return { level: 'Consciente Ambiental', icon: '🥈', color: 'text-blue-500', stars: 3 };
+    if (score === 2) return { level: 'Iniciante Sustentável', icon: '🥉', color: 'text-orange-500', stars: 2 };
+    if (score === 1) return { level: 'Aprendiz Verde', icon: '🌱', color: 'text-green-400', stars: 1 };
+    return { level: 'Precisa Melhorar', icon: '📚', color: 'text-gray-500', stars: 0 };
   };
 
   const performance = getPerformanceLevel(score);
+  const stars = Math.max(0, Math.min(5, score)); // Garantir que estrelas fiquem entre 0 e 5
 
   const getSustainabilityTips = () => {
     const tips = [
@@ -52,7 +54,7 @@ export const GameResults = ({ score, companyName, onRestart }: GameResultsProps)
           <div className="flex items-center justify-center gap-3 mb-4">
             <Trophy className={`h-8 w-8 ${performance.color}`} />
             <CardTitle className="text-3xl">
-              {score.toLocaleString()} pontos
+              {Math.max(0, score)} de 5 acertos
             </CardTitle>
           </div>
           <CardDescription className="text-lg">
@@ -69,7 +71,7 @@ export const GameResults = ({ score, companyName, onRestart }: GameResultsProps)
               <Star
                 key={star}
                 className={`h-8 w-8 ${
-                  score >= star * 400 
+                  stars >= star 
                     ? 'text-yellow-500 fill-yellow-500' 
                     : 'text-muted-foreground'
                 }`}
@@ -84,20 +86,20 @@ export const GameResults = ({ score, companyName, onRestart }: GameResultsProps)
             </h3>
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div>
-                <span className="text-muted-foreground">Pontuação Final:</span>
-                <p className="font-bold text-lg">{score.toLocaleString()}</p>
+                <span className="text-muted-foreground">Acertos:</span>
+                <p className="font-bold text-lg">{Math.max(0, score)} de 5</p>
               </div>
               <div>
-                <span className="text-muted-foreground">Nível Alcançado:</span>
-                <p className="font-bold">{performance.level}</p>
+                <span className="text-muted-foreground">Estrelas:</span>
+                <p className="font-bold text-lg">{stars} ⭐</p>
               </div>
               <div>
                 <span className="text-muted-foreground">Empresa:</span>
                 <p className="font-medium">{companyName}</p>
               </div>
               <div>
-                <span className="text-muted-foreground">Classificação:</span>
-                <p className="font-medium">{performance.icon}</p>
+                <span className="text-muted-foreground">Nível:</span>
+                <p className="font-medium">{performance.level}</p>
               </div>
             </div>
           </div>
@@ -131,7 +133,7 @@ export const GameResults = ({ score, companyName, onRestart }: GameResultsProps)
               className="flex-1"
               size="lg"
               onClick={() => {
-                const text = `🌿 Acabei de completar o Nicômaco Quiz com ${score} pontos como ${performance.level}! 
+                const text = `🌿 Acabei de completar o Nicômaco Quiz com ${stars} estrelas ⭐ (${Math.max(0, score)} acertos) como ${performance.level}! 
                 
 ${companyName} está comprometida com a sustentabilidade empresarial! 💚`;
                 
