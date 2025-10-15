@@ -54,7 +54,7 @@ export const QuizSession = ({ gameState, updateGameState, onComplete, onRestart 
     console.log('Is Correct:', isCorrect);
     console.log('==================');
     
-    const points = isCorrect ? 1 : -1; // +1 for correct, -1 for incorrect
+    const points = isCorrect ? 10 : -10; // +10 for correct, -10 for incorrect
 
     updateGameState({
       answered: true,
