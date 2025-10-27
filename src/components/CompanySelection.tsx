@@ -1,6 +1,7 @@
 import { CompanyType, CompanyOption } from '../types/game';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import mascotOwl from '../assets/mascot-owl.png';
 
 const companyOptions: CompanyOption[] = [
   {
@@ -47,6 +48,20 @@ interface CompanySelectionProps {
 export const CompanySelection = ({ onSelectCompany }: CompanySelectionProps) => {
   return (
     <div className="space-y-8">
+      {/* Mascot Section */}
+      <div className="text-center mb-8">
+        <div className="relative inline-block">
+          <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white/95 px-6 py-2 rounded-full shadow-lg">
+            <p className="text-lg font-semibold text-gray-700">"Boa sorte!"</p>
+          </div>
+          <img 
+            src={mascotOwl} 
+            alt="Mascote Nicômaco" 
+            className="w-32 h-32 mx-auto drop-shadow-2xl animate-fade-in"
+          />
+        </div>
+      </div>
+
       <div className="text-center">
         <h2 className="text-3xl font-bold text-white drop-shadow-lg mb-4">
           Teste seu modo de tomar decisões

@@ -6,6 +6,7 @@ import { QuizSession } from './QuizSession';
 import { GameResults } from './GameResults';
 import { Button } from './ui/button';
 import { Home } from 'lucide-react';
+import mascotOwl from '../assets/mascot-owl.png';
 
 const initialGameState: GameState = {
   phase: 'company-selection',
@@ -67,9 +68,18 @@ export const NicomacoGame = () => {
       <div className="container mx-auto px-4 py-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-6xl font-bold text-white drop-shadow-lg mb-4">
-            Nicômaco
-          </h1>
+          <div className="flex items-center justify-center gap-4 mb-4">
+            {gameState.phase !== 'company-selection' && (
+              <img 
+                src={mascotOwl} 
+                alt="Mascote Nicômaco" 
+                className="w-16 h-16 drop-shadow-lg animate-fade-in"
+              />
+            )}
+            <h1 className="text-6xl font-bold text-white drop-shadow-lg">
+              Nicômaco
+            </h1>
+          </div>
           <p className="text-xl text-white/90 drop-shadow-md font-medium">
             Jogo de gestão sustentável
           </p>
