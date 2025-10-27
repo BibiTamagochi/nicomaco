@@ -69,13 +69,11 @@ export const NicomacoGame = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-4 mb-4">
-            {gameState.phase !== 'company-selection' && (
-              <img 
-                src={mascotOwl} 
-                alt="Mascote Nicômaco" 
-                className="w-16 h-16 drop-shadow-lg animate-fade-in"
-              />
-            )}
+            <img 
+              src={mascotOwl} 
+              alt="Mascote Nicômaco" 
+              className="w-16 h-16 drop-shadow-lg animate-fade-in"
+            />
             <h1 className="text-6xl font-bold text-white drop-shadow-lg">
               Nicômaco
             </h1>
